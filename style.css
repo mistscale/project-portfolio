@@ -1,0 +1,110 @@
+:root {
+    --primary: #FA382F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 375px;
+    margin: 0 auto;
+}
+
+.section:nth-child(2n) {
+    background-color: #F2F2F2;
+}
+
+.section:nth-child(2n+1) {
+    background-color: #FFF;
+}
+
+header {
+    background-image: url(./assets/hero.jpg);
+    background-size: cover;
+    height: 520px;
+    color: #FFF;
+}
+
+.header-text {
+    padding-left: 24px;
+    padding-top: 121px;
+}
+
+.header-name {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 1px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.header-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+}
+
+.header-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.profile-picture-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.profile-picture {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    border: 2px solid #F4F4F4;
+    position: absolute;
+    margin-top: 50px;
+}
+
+/* line-dot section indicator*/
+.line {
+    border: 1px solid var(--primary);
+    width: 40px;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.summary {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 29px;
+    padding: 49px 24px;
+}
+
+@media screen and (min-width: 768px) {
+	.container {
+		width: 768px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.container {
+		width: 1200px;
+	}
+}

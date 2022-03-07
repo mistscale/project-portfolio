@@ -19,7 +19,7 @@
 
 .section:nth-child(2n) {
     background-color: #F2F2F2;
-    padding: 40px;
+    padding: 40px 0;
 }
 
 .section:nth-child(2n+1) {
@@ -57,6 +57,7 @@ header {
     font-weight: 700;
     font-size: 40px;
     line-height: 50px;
+    text-transform: lowercase;
 }
 
 .header-subtitle {
@@ -64,6 +65,7 @@ header {
     font-weight: 700;
     font-size: 24px;
     line-height: 40px;
+    text-transform: lowercase;
 }
 
 .profile-picture-container {
@@ -100,7 +102,7 @@ header {
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
-    padding: 50px 24px;
+    padding: 24px;
 }
 
 /* Titles and subtitles */
@@ -114,6 +116,7 @@ header {
     padding: 0 5px;
     margin: 0 0 24px;
     text-transform: uppercase;
+
 }
 
 .section-subtitle {
@@ -121,10 +124,10 @@ header {
     font-weight: 700;
     font-size: 22px;
     color: var(--primary);
-    display: inline-block;
     padding: 0 5px;
-    margin: 0 0 24px;
+    margin: 40px 0 20px;
     text-transform: uppercase;
+    text-align: center;
 }
 /* Tech section */
 .tech {
@@ -134,8 +137,9 @@ header {
     line-height: 30px;
 }
 
-.tech, .projects, .thoughts, .for-more {
+.tech, .project, .thoughts, .skills-container, .for-more  {
     text-align: center;
+
     /* padding: 40px 24px; */
 } 
 
@@ -148,7 +152,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    position: ;
 }
 
 .project-image {
@@ -189,10 +193,10 @@ header {
     color: var(--primary);
     font-weight: 700;
     font-size: 20px;
-    line-height: 29px;
+    line-height: 30px;
     text-transform: uppercase;
     text-align: left;
-    margin: 20px 0 0;
+    margin: 10px 0 0;
 }
 
 .project-paragraph {
@@ -229,6 +233,26 @@ header {
     font-weight: 700;
 }
 
+/* Thougts article section*/
+.thoughts {
+    text-align: left;
+}
+.date {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--primary);
+    text-transform: uppercase;
+}
+
+.article-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+}
+
 /* Skills section*/
 .skills {
     font-family: 'Roboto', sans-serif;
@@ -244,7 +268,6 @@ header {
     font-size: 17px;
     line-height: 30px;
     margin: 10px;
-
 }
 
 .skill-title {
@@ -273,14 +296,30 @@ footer {
     line-height: 25px;
 }
 
-/* @media screen and (min-width: 768px) {
+footer a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
 	.container {
-		width: 768px;
+		width: 700px;
 	}
+    .profile-picture-container {
+        padding-top: 130px;
+    }
+
+    .project {
+        width: 375px;
+
+    }
+    .thoughts {
+        width: 375px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
 	.container {
 		width: 1200px;
 	}
-} */
+}

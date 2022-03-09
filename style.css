@@ -108,8 +108,8 @@ header {
 
 /* Titles and subtitles */
 .title-container {
-    text-align: center;
-
+    display: flex;
+    justify-content: center;
     /* padding: 40px 24px; */
 } 
 
@@ -141,21 +141,23 @@ header {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 18px;
-    line-height: 30px;
+    text-align: center;
 }
 
-
 /* Featured project section */
+.projects-container {
+}
+
 .project a {
     text-decoration: none;
 }
 
-.project-image-container {
+/* .project-image-container {
     display: flex;
     justify-content: center;
     align-items: center;
     position: ;
-}
+} */
 
 .project-image {
     width: 100%;
@@ -255,6 +257,11 @@ header {
     line-height: 30px;
 }
 
+.more-thoughts-title {
+    font-family: 'Roboto', sans-serif;
+
+}
+
 /* Skills section*/
 .skills {
     font-family: 'Roboto', sans-serif;
@@ -307,16 +314,26 @@ footer a {
 	.container {
 		width: 700px;
 	}
+    .section {
+        padding: 80px;
+    }
     .profile-picture-container {
         padding-top: 130px;
     }
 
     .project {
         width: 375px;
+    
 
     }
     .thoughts {
         width: 375px;
+    }
+
+    .projects-container {
+        display: flex;
+    
+    
     }
 }
 

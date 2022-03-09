@@ -19,11 +19,12 @@
 
 .section:nth-child(2n) {
     background-color: #F2F2F2;
-    padding: 40px 0;
 }
 
 .section:nth-child(2n+1) {
     background-color: #FFF;
+}
+.section {
     padding: 40px 0;
 }
 /* Header section with hero image, profile picture and titles */
@@ -106,6 +107,12 @@ header {
 }
 
 /* Titles and subtitles */
+.title-container {
+    text-align: center;
+
+    /* padding: 40px 24px; */
+} 
+
 .section-title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -137,11 +144,6 @@ header {
     line-height: 30px;
 }
 
-.tech, .project, .thoughts, .skills-container, .for-more  {
-    text-align: center;
-
-    /* padding: 40px 24px; */
-} 
 
 /* Featured project section */
 .project a {

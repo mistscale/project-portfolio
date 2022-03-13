@@ -1,7 +1,7 @@
 :root {
-    --primary: #FA382F;
-    --secondary: #FDDFE7;
-    --footer: #072BCE;
+    --primary: #f1984f;
+    --secondary: #f1984f;
+    --footer: #4f4f4f;
 }
 
 * {
@@ -12,9 +12,14 @@
 	-moz-box-sizing: border-box;
 }
 
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .container {
     width: 375px;
     margin: 0 auto;
+    padding: 40px 24px;
 }
 
 .section:nth-child(2n) {
@@ -24,8 +29,19 @@
 .section:nth-child(2n+1) {
     background-color: #FFF;
 }
-.section {
-    padding: 40px 0;
+
+p {
+    color: #000;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bold {
+    font-weight: 700;
 }
 /* Header section with hero image, profile picture and titles */
 header {
@@ -36,8 +52,7 @@ header {
 }
 
 .header-text {
-    padding-left: 24px;
-    padding-top: 120px;
+    padding-top: 70px;
 }
 
 .header-name {
@@ -45,13 +60,10 @@ header {
     font-weight: 400;
     font-size: 18px;
     line-height: 18px;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     text-transform: uppercase;
 }
 
-.bold {
-    font-weight: 700;
-}
 
 .header-title {
     font-family: 'Montserrat', sans-serif;
@@ -72,7 +84,7 @@ header {
 .profile-picture-container {
   display: flex;
   justify-content: flex-end;
-  padding-top: 40px;
+  padding-top: 10px;
 }
 
 .profile-picture {
@@ -80,6 +92,29 @@ header {
     width: 180px;
     border-radius: 50%;
     border: 2px solid #F4F4F4;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: -50px;
+}
+
+.icon-wrapper {
+    width: 45px;
+    height: 45px;
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    filter: invert();
+    width: 25px;
+    height: 25px;
 }
 
 /* Line-dot section indicator and summary section */
@@ -98,32 +133,18 @@ header {
     display: inline-block;
 }
 
-.summary {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
-    padding: 24px;
-}
-
 /* Titles and subtitles */
-.title-container {
-    display: flex;
-    justify-content: center;
-    /* padding: 40px 24px; */
-} 
-
 .section-title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 22px;
     color: #FFF;
     background-color: var(--primary);
-    display: inline-block;
-    padding: 0 5px;
-    margin: 0 0 24px;
+    display: table;
+    text-align: center;
+    padding: 3px 8px;
+    margin: 24px auto;
     text-transform: uppercase;
-
 }
 
 .section-subtitle {
@@ -145,51 +166,37 @@ header {
 }
 
 /* Featured project section */
-.projects-container {
+img {
+    width: 100%;
 }
 
-.project a {
+.project-article a {
     text-decoration: none;
 }
 
-/* .project-image-container {
+.project-image-group {
     display: flex;
     justify-content: center;
-    align-items: center;
-    position: ;
-} */
-
-.project-image {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    transition: 0,5s ease;
+    position: relative;
 }
 
-.project-image-overlay {
+.project-overlay-title {
+    background-color: transparent;
     position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0,5);
-    transition: 0,5s ease;
-}
-
-.project-image-overlay-text {
-    position: absolute;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 34px;
     color: #FFF;
+    font-weight: 700;
+    align-self: center;
+    margin: 0;
     text-transform: uppercase;
 }
 
-.project-image:hover {
-    color: transparent;
-}
-
-.project-image-overlay:hover {
-    background-color: transparent;
+.project-overlay {
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .project-title {
@@ -205,27 +212,32 @@ header {
 
 .project-paragraph {
     font-family: 'Roboto', sans-serif;
-    color: #000;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
-    text-align: left;
+    text-decoration: none;
 }
 
 .tag-wrapper {
     display: flex;
     flex-wrap: wrap;
-    margin: 10px 0 24px ;
+    justify-content: flex-start;
+    gap: 5px;
 }
 
 .tag-wrapper p {
-    color: #000;
+    color: #FFF;
     background-color: var(--secondary);
     font-family: 'Roboto', sans-serif;
-    padding: 5px 10px;
-    margin: 0 5px 0 0;
+    font-size: 16px;
+    line-height: 12px;
+    font-weight: 500;
+    padding: 8px;
     border-radius: 3px;
+    margin: 10px 0;
 }
+
+.project-image-group:hover .project-overlay, .project-image-group:hover .project-overlay-title {
+	display: none;
+}
+
 
 /* Other projects section*/
 .other-project-link {
@@ -237,12 +249,15 @@ header {
     font-weight: 700;
 }
 
+.arrow:hover {
+    transform: scale(1.5);
+}
+
 /* Thougts article section*/
-.thoughts {
-    text-align: left;
+.thoughts-text, .more-thoughts-title {
+    font-family: 'Roboto', sans-serif;
 }
 .date {
-    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
@@ -251,15 +266,19 @@ header {
 }
 
 .article-title {
-    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
 }
 
 .more-thoughts-title {
-    font-family: 'Roboto', sans-serif;
+    color: #000;
+    text-decoration: none;
+}
 
+.more-thoughts-title:hover {
+    border-bottom: 2px solid #000;
+    display: inline;
 }
 
 /* Skills section*/
@@ -288,26 +307,26 @@ header {
 footer {
     background-color: var(--footer);
     color: #FFF;
-    font-family: 'Montserrat', sans-serif;
     text-align: center;
     padding: 60px;
+
 }
 
-.footer-title {
+footer h2 {
     font-weight: 700;
     font-size: 22px;
     margin: 0 0 24px;
     text-transform: uppercase;
 }
-
-.footer-info {
-    font-size: 17px;
-    line-height: 25px;
+footer p {
+    color: #FFF;
 }
-
 footer a {
     color: #FFF;
-    text-decoration: none;
+}
+
+footer a:hover {
+    border-bottom: 2px solid #FFF;
 }
 
 @media screen and (min-width: 768px) {
@@ -315,30 +334,37 @@ footer a {
 		width: 700px;
 	}
     .section {
-        padding: 80px;
+        padding: ;
     }
     .profile-picture-container {
-        padding-top: 130px;
+        padding-top: 100px;
     }
 
-    .project {
-        width: 375px;
-    
-
-    }
-    .thoughts {
-        width: 375px;
+    .section-title, .section-subtitle {
+        font-size: 28px;
     }
 
-    .projects-container {
-        display: flex;
-    
-    
+    .project-group, .article-group {
+        display: grid;
+		grid-template-columns: 1fr 1fr;
+        gap:  40px;
     }
 }
 
 @media screen and (min-width: 1200px) {
 	.container {
-		width: 1200px;
+		width: 1000px;
 	}
+
+    .header-name {
+        font-size: 20px;
+    }
+    .header-title {
+        font-size: 50px;
+    }
+    .header-subtitle {
+        font-size: 34px;
+    }
+
+
 }

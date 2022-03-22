@@ -293,13 +293,9 @@ img {
 }
 
 /* Skills section*/
-.skills {
-	font-family: 'Roboto', sans-serif;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	text-align: center;
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .skills-list {
@@ -307,6 +303,7 @@ img {
 	font-size: 17px;
 	line-height: 30px;
 	margin: 10px;
+	text-align: center;
 }
 
 .skill-title {
@@ -364,9 +361,12 @@ footer .icon-container {
 		grid-template-columns: 1fr 1fr;
 		gap: 40px;
 	}
+
+	.skills-container {
+		grid-template-columns: auto auto auto auto;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
 	.container {
 		width: 1000px;
 	}
@@ -380,4 +380,5 @@ footer .icon-container {
 	.header-subtitle {
 		font-size: 34px;
 	}
-}
+
+

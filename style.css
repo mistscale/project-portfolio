@@ -1,6 +1,6 @@
 :root {
 	--primary: #333;
-	--secondary: #f1984f;
+	--secondary: #df9a57;
 	--footer: #333;
 }
 
@@ -300,10 +300,11 @@ img {
 
 .skills-list {
 	list-style-type: none;
-	font-size: 17px;
+	font-size: 16px;
 	line-height: 30px;
-	margin: 10px;
 	text-align: center;
+	margin-bottom: 20px;
+
 }
 
 .skill-title {
@@ -380,5 +381,8 @@ footer .icon-container {
 	.header-subtitle {
 		font-size: 34px;
 	}
-
+	.project-overlay-title {
+		font-size: 28px;
+	}
+}
 

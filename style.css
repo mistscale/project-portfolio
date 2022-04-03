@@ -1,6 +1,7 @@
 :root {
 	--primary: #393633;
-	--secondary: #EEA790;
+	--secondary: #FCD5C5;
+	--tertiary: #EFA795;
 	--white: #fff;
 	--light-grey: #f4f4f4;
 }
@@ -114,13 +115,13 @@ a {
 	height: 25px;
 }
 
-.icon:hover {
+.icon-wrapper:hover {
 	opacity: 75%;
 }
 
 /* Line-dot section indicator and summary section */
 .line {
-	border: 1px solid var(--secondary);
+	border: 1px solid var(--tertiary);
 	width: 40px;
 	display: inline-block;
 	margin-bottom: 4px;
@@ -129,7 +130,7 @@ a {
 .dot {
 	height: 10px;
 	width: 10px;
-	background-color: var(--secondary);
+	background-color: var(--tertiary);
 	border-radius: 50%;
 	display: inline-block;
 }
@@ -168,12 +169,8 @@ img {
 	width: 100%;
 }
 
-.project-group {
-	margin-top: 40px;
-}
-
 .project {
-	margin-top: 20px;
+	margin-top: 40px;
 }
 
 .project-article a {
@@ -189,7 +186,7 @@ img {
 .project-overlay-title {
 	background-color: transparent;
 	position: absolute;
-	color: #fff;
+	color: var(--white);
 	font-weight: 700;
 	align-self: center;
 	margin: 0;
@@ -224,16 +221,12 @@ img {
 .project-title {
 	color: var(--primary);
 	font-weight: 700;
-	font-size: 20px;
-	line-height: 30px;
+	font-size: 1.3rem;
 	text-transform: uppercase;
 	text-align: left;
 	margin: 10px 0 0;
 }
 
-.other-project .project-title:hover {
-	color: var(--secondary);
-}
 
 .tag-wrapper {
 	display: flex;
@@ -243,7 +236,7 @@ img {
 }
 
 .tag-wrapper p {
-	color: var(--white);
+	color: var(--primary);
 	background-color: var(--secondary);
     font-size: 1rem;
     line-height: 1;
@@ -253,25 +246,32 @@ img {
     margin: 5px 0 0;
 }
 
-	/* .project-image-group:hover .project-overlay,
-	.project-image-group:hover .project-overlay-title {
-		display: none;
-	} */
+/* .project-image-group:hover .project-overlay,
+.project-image-group:hover .project-overlay-title {
+	display: none;
+} */
 
 /* Other projects section*/
+.other-project {
+	margin: 20px 0 0;
+}
 .other-project-link {
 	text-decoration: none;
 	color: #000;
 }
 
+.other-project .project-title:hover {
+	opacity: 75%;
+}
+
 .arrow {
-	color: var(--secondary);
+	color: var(--tertiary);
 	font-weight: 700;
 	font-family: monospace;
 } 
 
 .arrow:hover {
-	color: var(--primary);
+	opacity: 75%;
 }
 
 /* Thougts article section*/
@@ -310,7 +310,7 @@ img {
 .skills-list {
 	list-style-type: none;
 	font-size: 1.1rem;
-	line-height: 2;
+	line-height: 1.8;
 	text-align: center;
 	margin-bottom: 20px;
 }

@@ -2,6 +2,7 @@
 	--primary: #393633;
 	--secondary: #EEA790;
 	--white: #fff;
+	--light-grey: #f4f4f4;
 }
 
 * {
@@ -23,7 +24,7 @@ body {
 }
 
 .section:nth-child(2n) {
-	background-color: #f3f3f3;
+	background-color: var(--light-grey);
 }
 
 .section:nth-child(2n + 1) {
@@ -32,8 +33,8 @@ body {
 
 p {
 	color: #000;
-	font-size: 18px;
-	line-height: 30px;
+	font-size: 1.1rem;
+	line-height: 1.6;
 }
 
 a {
@@ -87,7 +88,7 @@ a {
 	height: 180px;
 	width: 180px;
 	border-radius: 50%;
-	border: 2px solid #f4f4f4;
+	border: 2px solid var(--light-grey);
 }
 
 .icon-container {
@@ -100,7 +101,7 @@ a {
 .icon-wrapper {
 	width: 45px;
 	height: 45px;
-	border: 2px solid #fff;
+	border: 2px solid var(--white);
 	border-radius: 50%;
 	display: flex;
 	align-items: center;
@@ -111,6 +112,10 @@ a {
 	filter: invert();
 	width: 25px;
 	height: 25px;
+}
+
+.icon:hover {
+	opacity: 75%;
 }
 
 /* Line-dot section indicator and summary section */
@@ -132,19 +137,20 @@ a {
 /* Titles and subtitles */
 .section-title {
 	font-weight: 700;
-	font-size: 22px;
-	color: #fff;
+	font-size: 1.5rem;
+	color:var(--white);
 	background-color: var(--primary);
 	display: table;
 	text-align: center;
-	padding: 3px 8px;
-	margin: 24px auto;
+	padding: 3px 10px;
+	margin: 20px auto;
 	text-transform: uppercase;
+	border-radius: 3px;
 }
 
 .section-subtitle {
 	font-weight: 700;
-	font-size: 22px;
+	font-size: 1.5rem;
 	color: var(--primary);
 	padding: 0 5px;
 	margin: 40px 0 20px;
@@ -154,7 +160,6 @@ a {
 /* Tech section */
 .tech {
 	font-weight: 400;
-	font-size: 18px;
 	text-align: center;
 }
 
@@ -207,13 +212,13 @@ img {
     transition: 0.3s ease;
   }
 
-  .project-overlay:hover {
-    background-color: transparent;
+.project-overlay:hover {
+	background-color: transparent;
     color: transparent;
   }
 
-  .project-overlay:hover .project-overlay-title {
-	  display: none;
+.project-overlay:hover .project-overlay-title {
+	display: none;
   }
 
 .project-title {
@@ -230,26 +235,22 @@ img {
 	color: var(--secondary);
 }
 
-.project-paragraph {
-	text-decoration: none;
-}
-
 .tag-wrapper {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-start;
-	gap: 5px;
+	gap: 7px;
 }
 
 .tag-wrapper p {
-	color: #fff;
+	color: var(--white);
 	background-color: var(--secondary);
-	font-size: 16px;
-	line-height: 12px;
+    font-size: 1rem;
+    line-height: 1;
 	font-weight: 500;
-	padding: 8px;
+	padding: 7px;
 	border-radius: 3px;
-	margin: 10px 0;
+    margin: 5px 0 0;
 }
 
 	/* .project-image-group:hover .project-overlay,
@@ -303,15 +304,15 @@ img {
 .skills-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+	margin: 40px 0 0;
 }
 
 .skills-list {
 	list-style-type: none;
-	font-size: 16px;
-	line-height: 30px;
+	font-size: 1.1rem;
+	line-height: 2;
 	text-align: center;
 	margin-bottom: 20px;
-
 }
 
 .skill-title {
@@ -319,6 +320,7 @@ img {
 	font-weight: 700;
 	text-transform: uppercase;
 }
+
 /* Footer section */
 footer {
 	background-color: var(--primary);
@@ -329,15 +331,15 @@ footer {
 
 footer h2 {
 	font-weight: 700;
-	font-size: 22px;
+	font-size: 1.5rem;
 	margin: 0 0 24px;
 	text-transform: uppercase;
 }
 footer p {
-	color: #fff;
+	color: var(--white);
 }
 .email {
-	color: #fff;
+	color: var(--white);
 }
 
 .email:hover {
@@ -372,8 +374,8 @@ footer .icon-container {
 	}
 
 	.section-title,
-	.section-subtitle {
-		font-size: 28px;
+	.section-subtitle, footer h2 {
+		font-size: 1.8rem;
 	}
 
 	.project-group,

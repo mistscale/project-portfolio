@@ -1,9 +1,13 @@
 :root {
-	--primary: #393633;
-	--secondary: #FCD5C5;
-	--tertiary: #EFA795;
+	--primary: hsl(35, 5%, 20%);
+	--secondary: hsl(20, 60%, 90%);
+	--tertiary: hsl(187, 23%, 73%);
 	--white: #fff;
 	--light-grey: #f4f4f4;
+}
+
+::selection {
+	background-color: var(--secondary);
 }
 
 * {
@@ -47,7 +51,7 @@ a {
 }
 /* Header section with hero image, profile picture and titles */
 .header {
-	background-image: url(./assets/hero3.jpg);
+	background-image: url(./assets/hero4.jpg);
 	background-size: cover;
 	height: 520px;
 	color: #fff;
@@ -66,10 +70,10 @@ a {
 }
 
 .header-title {
-    font-weight: 700;
-    font-size: 3rem;
-    line-height: 1;
-    text-transform: uppercase;
+	font-weight: 700;
+	font-size: 3rem;
+	line-height: 1;
+	text-transform: uppercase;
 }
 
 .header-subtitle {
@@ -110,13 +114,13 @@ a {
 }
 
 .icon {
-	filter: invert();
-	width: 25px;
-	height: 25px;
+	color: white;
+	font-size: 1.7rem;
 }
 
 .icon-wrapper:hover {
 	opacity: 75%;
+	transition: 0.3s ease;
 }
 
 /* Line-dot section indicator and summary section */
@@ -139,7 +143,7 @@ a {
 .section-title {
 	font-weight: 700;
 	font-size: 1.5rem;
-	color:var(--white);
+	color: var(--white);
 	background-color: var(--primary);
 	display: table;
 	text-align: center;
@@ -170,7 +174,7 @@ img {
 }
 
 .project {
-	margin-top: 40px;
+	margin-top: 24px;
 }
 
 .project-article a {
@@ -206,17 +210,17 @@ img {
 }
 
 .project-overlay {
-    transition: 0.3s ease;
-  }
+	transition: 0.3s ease;
+}
 
 .project-overlay:hover {
 	background-color: transparent;
-    color: transparent;
-  }
+	color: transparent;
+}
 
 .project-overlay:hover .project-overlay-title {
 	display: none;
-  }
+}
 
 .project-title {
 	color: var(--primary);
@@ -227,23 +231,34 @@ img {
 	margin: 10px 0 0;
 }
 
-
 .tag-wrapper {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: flex-start;
+	align-items: center;
 	gap: 7px;
 }
 
 .tag-wrapper p {
 	color: var(--primary);
 	background-color: var(--secondary);
-    font-size: 1rem;
-    line-height: 1;
+	font-size: 1rem;
+	line-height: 1;
 	font-weight: 500;
 	padding: 7px;
 	border-radius: 3px;
-    margin: 5px 0 0;
+	margin: 5px 0 0;
+	height: 30px;
+}
+
+.github-btn {
+	font-size: 33px;
+	margin: 3px 0 0;
+	color: var(--primary);
+}
+
+.github-btn:hover {
+	opacity: 75%;
+	transition: 0.3s ease;
 }
 
 /* .project-image-group:hover .project-overlay,
@@ -251,7 +266,7 @@ img {
 	display: none;
 } */
 
-/* Other projects section*/
+/* Other projects section */
 .other-project {
 	margin: 20px 0 0;
 }
@@ -262,16 +277,7 @@ img {
 
 .other-project .project-title:hover {
 	opacity: 75%;
-}
-
-.arrow {
-	color: var(--tertiary);
-	font-weight: 700;
-	font-family: monospace;
-} 
-
-.arrow:hover {
-	opacity: 75%;
+	transition: 0.3s ease;
 }
 
 /* Thougts article section*/
@@ -279,19 +285,23 @@ img {
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 30px;
-	color: var(--primary);
+	color: var(--tertiary);
 	text-transform: uppercase;
-	color: var(--secondary);
+}
+
+.article {
+	margin-top: 24px;
 }
 
 .article-title {
+	color: var(--primary);
 	font-weight: 700;
 	font-size: 20px;
 	line-height: 30px;
 }
 
 .more-thoughts-title {
-	color: #000;
+	color: var(--primary);
 	text-decoration: none;
 }
 
@@ -300,10 +310,15 @@ img {
 	display: inline;
 }
 
+.arrow:hover {
+	color: var(--tertiary);
+	transition: 0.3s ease;
+}
+
 /* Skills section*/
 .skills-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 	margin: 40px 0 0;
 }
 
@@ -374,7 +389,8 @@ footer .icon-container {
 	}
 
 	.section-title,
-	.section-subtitle, footer h2 {
+	.section-subtitle,
+	footer h2 {
 		font-size: 1.8rem;
 	}
 
@@ -387,8 +403,8 @@ footer .icon-container {
 
 	.skills-container {
 		grid-template-columns: auto auto auto auto;
+	}
 }
-
 @media screen and (min-width: 1100px) {
 	.container {
 		width: 1000px;

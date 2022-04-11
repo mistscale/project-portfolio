@@ -12,6 +12,10 @@
 		/>
 		<link rel="icon" type="image" href="./assets/favicon.ico" />
 		<link rel="stylesheet" href="style.css" />
+		<script
+			src="https://kit.fontawesome.com/dfef542939.js"
+			crossorigin="anonymous"
+		></script>
 		<title>Lisen Lundgren - Portfolio</title>
 	</head>
 	<body>
@@ -20,31 +24,21 @@
 				<div class="icon-container">
 					<a href="https://www.linkedin.com/in/lisolu/" target="_blank">
 						<div class="icon-wrapper">
-							<img
-								alt="Link to LinkedIn"
-								class="icon"
-								src="./assets/linkedin.svg"
-							/>
+							<i class="icon fa-brands fa-linkedin-in"></i>
 						</div>
 					</a>
 					<a href="https://github.com/mistscale" target="_blank">
 						<div class="icon-wrapper">
-							<img
-								alt="Link to Github"
-								class="icon"
-								src="./assets/github.svg"
-							/>
+							<i class="icon fa-brands fa-github"></i>
 						</div>
 					</a>
-					<!-- <a href="" target="_blank">
-                    <div class="icon-wrapper"><img alt="Link to Stack Overflow" class="icon" src="./assets/stack-overflow.svg"/></div>
-                </a> -->
 				</div>
 				<div class="header-text">
 					<h3 class="header-name">
 						Portfolio: <span class="bold">Lisen Lundgren</span>
 					</h3>
-					<h1 class="header-title">Frontend </br> Developer</h1>
+					<h1 class="header-title">Frontend</h1>
+					<h1 class="header-title">Developer</h1>
 					<!-- <h2 class="header-subtitle">+ Information system technician</h2> -->
 				</div>
 				<div class="profile-picture-container">
@@ -73,8 +67,8 @@
 				<h2 class="section-title">Tech</h2>
 				<div class="tech">
 					<p>
-						HTML, CSS, Flexbox, JavaScript, JSX, React, React Hooks, Web
-						Accessibly, API:s, mob-programming, pair-programming, Github.
+						HTML, CSS, Flexbox, JavaScript, JSX, React, React Hooks, Redux, Styled Components, Web
+						Accessibly, API:s, mob-programming, pair-programming, GitHub.
 					</p>
 				</div>
 			</div>
@@ -98,13 +92,8 @@
 						</a>
 						<h3 class="project-title">Top Movies</h3>
 						<p class="project-paragraph">
-							Multi-page web app built using React Router and API to display current top movies.
-							<a
-								href="https://github.com/mistscale/project-movies"
-								target="_blank"
-								rel="noopener noreferrer"
-								><span class="arrow">>></span></a
-							>
+							Multi-page web app built using React Router and API to display
+							current top movies.
 						</p>
 						<div class="tag-wrapper">
 							<p>React</p>
@@ -112,6 +101,12 @@
 							<p>API:s</p>
 							<p>CSS</p>
 							<p>Styled Components</p>
+							<a
+								href="https://github.com/mistscale/project-movies"
+								target="_blank"
+								rel="noopener noreferrer"
+								><i class="github-btn fa-brands fa-github-square"></i
+							></a>
 						</div>
 					</article>
 					<article class="project">
@@ -134,18 +129,18 @@
 						<p class="project-paragraph">
 							Twitter-like web app built in React for posting and liking happy
 							thoughts, using API made by the Technigo team.
-							<a
-								href="https://github.com/mistscale/project-happy-thoughts"
-								target="_blank"
-								rel="noopener noreferrer"
-								><span class="arrow">>></span></a
-							>
 						</p>
 						<div class="tag-wrapper">
 							<p>React</p>
 							<p>JSX</p>
 							<p>API:s</p>
 							<p>CSS</p>
+							<a
+								href="https://github.com/mistscale/project-happy-thoughts"
+								target="_blank"
+								rel="noopener noreferrer"
+								><i class="github-btn fa-brands fa-github-square"></i
+							></a>
 						</div>
 					</article>
 					<article class="project">
@@ -155,7 +150,10 @@
 							rel="noopener noreferrer"
 						>
 							<div class="project-image-group">
-								<img src="./assets/weather-app-mockup.jpg" alt="project screenshot" />
+								<img
+									src="./assets/weather-app-mockup.jpg"
+									alt="project screenshot"
+								/>
 								<div class="project-overlay">
 									<h2 class="project-overlay-title">Weather App</h2>
 								</div>
@@ -165,17 +163,17 @@
 						<p class="project-paragraph">
 							Web app built in JavaScript using data from open weather API,
 							showing weather based on IP-address.
-							<a
-								href="https://github.com/mistscale/project-weather-app"
-								target="_blank"
-								rel="noopener noreferrer"
-								><span class="arrow">>></span></a
-							>
 						</p>
 						<div class="tag-wrapper">
 							<p>JavaScript</p>
 							<p>API:s</p>
 							<p>CSS</p>
+							<a
+								href="https://github.com/mistscale/project-weather-app"
+								target="_blank"
+								rel="noopener noreferrer"
+								><i class="github-btn fa-brands fa-github-square"></i
+							></a>
 						</div>
 					</article>
 					<article class="project">
@@ -198,22 +196,47 @@
 						<p class="project-paragraph">
 							Web app built in React showing 2019 new album and single releases
 							from Spotify API.
-							<a
-								href="https://github.com/mistscale/project-music-releases"
-								target="_blank"
-								rel="noopener noreferrer"
-								><span class="arrow">>></span></a
-							>
 						</p>
 						<div class="tag-wrapper">
 							<p>React</p>
 							<p>JSX</p>
 							<p>API:s</p>
 							<p>CSS</p>
+							<a
+								href="https://github.com/mistscale/project-music-releases"
+								target="_blank"
+								rel="noopener noreferrer"
+								><i class="github-btn fa-brands fa-github-square"></i
+							></a>
 						</div>
 					</article>
 				</div>
 				<h2 class="section-subtitle">Other Projects</h2>
+				<article class="other-project">
+					<a
+						href="https://techmoviequiz.netlify.app"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="other-project-link"
+					>
+						<h3 class="project-title">Tech Movie Quiz</h3>
+					</a>
+					<p class="project-paragraph">
+						Multiple choice quiz built in React using Redux, displaying progress
+						and summary with score.
+					</p>
+					<div class="tag-wrapper">
+						<p>React</p>
+						<p>Redux</p>
+						<p>Styled Components</p>
+						<a
+							href="https://github.com/mistscale/project-redux-quiz"
+							target="_blank"
+							rel="noopener noreferrer"
+							><i class="github-btn fa-brands fa-github-square"></i
+						></a>
+					</div>
+				</article>
 				<article class="other-project">
 					<a
 						href="https://lisen-github-tracker.netlify.app/"
@@ -222,23 +245,23 @@
 						class="other-project-link"
 					>
 						<h3 class="project-title">GitHub Tracker</h3>
-						<p class="project-paragraph">
-							Tracker of my Technigo projects, using Github API and chart from
-							chart.js.
-							<a
-								href="https://github.com/mistscale/project-github-tracker"
-								target="_blank"
-								rel="noopener noreferrer"
-								><span class="arrow">>></span></a
-							>
-						</p>
-						<div class="tag-wrapper">
-							<p>JavaScript</p>
-							<p>API:s</p>
-							<p>HTML</p>
-							<p>CSS</p>
-						</div>
 					</a>
+					<p class="project-paragraph">
+						Tracker of my Technigo projects, using Github API and chart from
+						chart.js.
+					</p>
+					<div class="tag-wrapper">
+						<p>JavaScript</p>
+						<p>API:s</p>
+						<p>HTML</p>
+						<p>CSS</p>
+						<a
+							href="https://github.com/mistscale/project-github-tracker"
+							target="_blank"
+							rel="noopener noreferrer"
+							><i class="github-btn fa-brands fa-github-square"></i
+						></a>
+					</div>
 				</article>
 				<article class="other-project">
 					<a
@@ -248,23 +271,23 @@
 						class="other-project-link"
 					>
 						<h3 class="project-title">Guess Who</h3>
-						<p class="project-paragraph">
-							Digital version of the board game "Guess Who" built in JavaScript
-							that filters characters based on user guesses.
-							<a
-								href="https://github.com/mistscale/project-guess-who"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<span class="arrow">>></span>
-							</a>
-						</p>
-						<div class="tag-wrapper">
-							<p>JavaScript</p>
-							<p>HTML</p>
-							<p>CSS</p>
-						</div>
 					</a>
+					<p class="project-paragraph">
+						Digital version of the board game "Guess Who" built in JavaScript
+						that filters characters based on user guesses.
+					</p>
+					<div class="tag-wrapper">
+						<p>JavaScript</p>
+						<p>HTML</p>
+						<p>CSS</p>
+						<a
+							href="https://github.com/mistscale/project-guess-who"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<i class="github-btn fa-brands fa-github-square"></i>
+						</a>
+					</div>
 				</article>
 				<article class="other-project">
 					<a
@@ -274,61 +297,84 @@
 						class="other-project-link"
 					>
 						<h3 class="project-title">ChatBot</h3>
-						<p class="project-paragraph">
-							Simple chatbot for ordering fika built in JavaScript.
-							<a
-								href="https://github.com/mistscale/project-chatbot"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<span class="arrow">>></span>
-							</a>
-						</p>
-						<div class="tag-wrapper">
-							<p>JavaScript</p>
-							<p>HTML</p>
-							<p>CSS</p>
-						</div>
 					</a>
+					<p class="project-paragraph">
+						Simple chatbot for ordering fika built in JavaScript.
+					</p>
+					<div class="tag-wrapper">
+						<p>JavaScript</p>
+						<p>HTML</p>
+						<p>CSS</p>
+						<a
+							href="https://github.com/mistscale/project-chatbot"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<i class="github-btn fa-brands fa-github-square"></i>
+						</a>
+					</div>
 				</article>
 			</div>
 		</section>
-		<!-- <section class="section">
-        <div class="container">
-            <h2 class="section-title">My Thoughts</h2>
-            <div class="article-group">
-                <article class="article">
-                    <img src="./assets/hero.jpg" class="project-image" alt="Project cover image">
-                    <div class="thoughts-text">
-                        <p class="date">DEC 2019</p>
-                        <h3 class="article-title">How to stop being scared: Learning to love code</h3>
-                        <p class="project-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Iusto accusantium laboriosam nemo eius reprehenderit? Perspiciatis dicta magnam cumque sit aliquid.
-                            <span class="arrow">>></span></p>
-                    </div>
-                </article>
-                <article class="article">
-                    <img src="./assets/hero.jpg" class="project-image" alt="Project cover image">
-                    <div class="thoughts-text">
-                        <p class="date">DEC 2019</p>
-                        <h3 class="article-title">How to stop being scared: Learning to love code</h3>
-                        <p class="project-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Iusto accusantium laboriosam nemo eius reprehenderit? Perspiciatis dicta magnam cumque sit aliquid.
-                            <a href=""><span class="arrow">>></span></a>
-                        </p>
-                    </div>
-                </article>
-            </div>
-            <h2 class="section-subtitle">More Thoughts</h2>
-            <article class="more-thoughts">
-                <a href="" target="_blank">
-                    <h3 class="more-thoughts-title">
-                        <span class="date">DEC 2019</span> How to stop being scared: Learning to love code <span class="arrow">>></span>
-                    </h3>
-                </a>
-            </article> 
-        </div>
-    </section> -->
+		<section class="section">
+			<div class="container">
+				<h2 class="section-title">My Thoughts</h2>
+				<div class="article-group">
+					<article class="article">
+						<a
+							href="https://medium.com/@lisolundgren/betydelsen-av-teamwork-inom-tech-f5b51a4467e7"
+						>
+							<img
+								src="./assets/article1.jpeg"
+								class="project-image"
+								alt="Project cover"
+							/>
+							<div class="thoughts-text">
+								<h3 class="article-title">
+									<span class="date">APR 2022</span>
+									Betydelsen av teamwork inom tech
+								</h3>
+								<p class="project-paragraph">
+									Förra året bestämde jag mig för att ändra riktning i min
+									karriär. Med bakgrund inom IT-drift fick jag för mig en dag...
+									<i class="arrow fa-solid fa-angles-right"></i>
+								</p>
+							</div>
+						</a>
+					</article>
+					<!-- <article class="article">
+						<img
+							src="./assets/hero.jpg"
+							class="project-image"
+							alt="Project cover"
+						/>
+						<div class="thoughts-text">
+							<p class="date">DEC 2019</p>
+							<h3 class="article-title">
+								How to stop being scared: Learning to love code
+							</h3>
+							<p class="project-paragraph">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+								accusantium laboriosam nemo eius reprehenderit? Perspiciatis
+								dicta magnam cumque sit aliquid.
+							</p>
+						</div>
+					</article> -->
+				</div>
+				<!-- <h2 class="section-subtitle">More Thoughts</h2>
+				<article class="more-thoughts">
+					<a
+						href="https://medium.com/@lisolundgren/betydelsen-av-teamwork-inom-tech-f5b51a4467e7"
+						target="_blank"
+					>
+						<h3 class="more-thoughts-title">
+							<span class="date">APR 2022</span> Betydelsen av teamwork inom
+							tech <span><i class="fa-solid fa-angles-right"></i></span>
+						</h3>
+					</a>
+				</article> -->
+			</div>
+		</section>
 		<section class="section">
 			<div class="container">
 				<h2 class="section-title">Skills</h2>
@@ -339,7 +385,8 @@
 						<li>CSS</li>
 						<li>JavaScript</li>
 						<li>React</li>
-						<li>Git</li>
+						<li>Redux</li>
+						<li>Styled Components</li>
 					</ul>
 					<ul class="skills-list">
 						<li class="skill-title">Toolbox</li>
@@ -359,9 +406,7 @@
 					</ul>
 					<ul class="skills-list">
 						<li class="skill-title">Upcomming</li>
-						<li>Redux</li>
 						<li>Node.js</li>
-						<li>Styled Components</li>
 					</ul>
 				</div>
 			</div>
@@ -380,22 +425,18 @@
 			<a href="mailto:lisolundgren@gmail.com" class="email">
 				lisolundgren@gmail.com
 			</a>
-
 			<div class="icon-container">
 				<a href="https://www.linkedin.com/in/lisolu/" target="_blank">
 					<div class="icon-wrapper">
-						<img
-							alt="Link to LinkedIn"
-							class="icon"
-							src="./assets/linkedin.svg"
-						/>
+						<i class="icon fa-brands fa-linkedin-in"></i>
 					</div>
 				</a>
 				<a href="https://github.com/mistscale" target="_blank">
 					<div class="icon-wrapper">
-						<img alt="Link to Github" class="icon" src="./assets/github.svg" />
+						<i class="icon fa-brands fa-github"></i>
 					</div>
 				</a>
+			</div>
 			</div>
 		</footer>
 	</body>

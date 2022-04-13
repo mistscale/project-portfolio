@@ -252,7 +252,7 @@ img {
 
 .github-btn {
 	font-size: 33px;
-	margin: 3px 0 0;
+	margin: 4px 0 0;
 	color: var(--primary);
 }
 
@@ -260,11 +260,6 @@ img {
 	opacity: 75%;
 	transition: 0.3s ease;
 }
-
-/* .project-image-group:hover .project-overlay,
-.project-image-group:hover .project-overlay-title {
-	display: none;
-} */
 
 /* Other projects section */
 .other-project {

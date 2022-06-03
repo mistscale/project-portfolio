@@ -261,6 +261,16 @@ img {
 	transition: 0.3s ease;
 }
 
+.p-link {
+	color: var(--primary);
+	text-decoration: underline;
+}
+
+.p-link:hover {
+	opacity: 75%;
+	transition: 0.3s ease;
+}
+
 /* Other projects section */
 .other-project {
 	margin: 20px 0 0;
